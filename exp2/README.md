@@ -51,7 +51,8 @@ The message types used are:
 
 ### Limitation
 
-I think if there is an obstacle avoindance the robot could operate more accurate and avoid crashes to the human model.
+* I think if there is an obstacle avoindance the robot could operate more accurate and avoid crashes to the human model.
+* In my case, as running the whole package on a virtual machine, was a bit slow and it might cause some issues when running the package
 
 ### Author
 Mohamed Qaoud - mohamed.qaoud@outlook.com
