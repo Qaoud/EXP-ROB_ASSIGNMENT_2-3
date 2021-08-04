@@ -33,3 +33,7 @@ To run assignment 3, the following command could be used:
 ``` $ roslaunch exp3 everything.launch ```
 
 For the description of the project click [here](https://github.com/Qaoud/EXP-ROB_ASSIGNEMT_2-3/tree/main/exp3)
+
+-----------------------------------------
+
+Author: Mohamed Qaoud - mohamed.qaoud@outlook.com
