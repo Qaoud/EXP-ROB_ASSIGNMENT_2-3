@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+	<include file="$(find planning)/launch/sim_w2.launch"></include>
+
+
+    <arg name="des_x" default= "2.5"/>
+    <arg name="des_y" default= "-2.0"/>
+    <param name="des_pos_x" value="$(arg des_x)" />
+    <param name="des_pos_y" value="$(arg des_y)" />
+    <node pkg="planning" type="wall_follow_service_m.py" name="wall_follower"/>
+    <node pkg="planning" type="go_to_point_service_m.py" name="go_to_point" />
+    <node pkg="planning" type="user_interface.py" name="user_interface" output="screen" />
+    <node pkg="planning" type="bug_m.py" name="bug" />
+</launch>

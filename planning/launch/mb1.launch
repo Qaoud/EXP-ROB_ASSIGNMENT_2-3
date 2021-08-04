@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+	<include file="$(find planning)/launch/sim_w2.launch"></include>
+	<include file="$(find planning)/launch/gmapping.launch"></include>
+	
+    <arg name="des_x" default= "2.5"/>
+    <arg name="des_y" default= "-2.0"/>
+    <param name="des_pos_x" value="$(arg des_x)" />
+    <param name="des_pos_y" value="$(arg des_y)" />
+    
+    <include file="$(find planning)/launch/move_base.launch"></include>
+</launch>
