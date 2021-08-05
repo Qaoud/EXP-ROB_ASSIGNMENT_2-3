@@ -32,22 +32,29 @@ The dog starts in the Sleep state.
 
 <img width="750" alt="Screenshot 2021-08-05 at 01 30 23" src="https://user-images.githubusercontent.com/23742278/128268471-76f55aa8-2fff-4ec0-8bda-20181a083264.png">
 
+The available nodes and topics could be found in the following rqt_graph:
 
-Topics involved:
+![rosgraph_exp2](https://user-images.githubusercontent.com/23742278/128283114-c10bff60-a6d6-4c53-97e1-2f2519fc027e.png)
+
+
+Topics available:
 
 `control_topic`: topic used by the FSM to order the Dog_control component to start simulating a movement
 `motion_over_topic`: topic whose duty is to inform the FSM when the motion is over or interrupted by the sight of the ball
 `ball_control_topic`: topic used by Dog control ball to communicate with Dog FSM: it sends information when the ball is first spotted by the robot, and then when the dog eventually loses track of it
 
-The actions used are:
+The actions used:
 
 `exp2.msg/PlanningAction`: a simple action whose goals are of type `geometry_msgs/PoseStamped`
 
-The message types used are:
+The message types:
 
 `std_msgs.msg/Int64`: imported message type consisting in an integer
 `exp2.msg/Coordinates`: message made of two integers x and y
 
+### Installation $ Running
+
+See the [MAIN](https://github.com/Qaoud/EXP-ROB_ASSIGNMENT_2-3) branch to be able to install and run this package.
 
 ### Limitation
 
