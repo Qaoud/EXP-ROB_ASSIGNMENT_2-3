@@ -58,7 +58,7 @@ The available nodes and topics could be found in the following rqt_graph:
 
 ![rosgraph](https://user-images.githubusercontent.com/23742278/128281418-13c68e77-746f-4227-b9d5-2f85ceeba43e.png)
 
-#### Topics involved:
+#### Topics available:
 * Where the `play_topic` is used by the human node in order to perform the  `PLAY` state, and which room the robot should reach. It also sends data to the finiste state machine node.
 
 
