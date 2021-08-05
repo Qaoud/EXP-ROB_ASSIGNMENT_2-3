@@ -58,12 +58,17 @@ The available nodes and topics could be found in the following rqt_graph:
 
 ![rosgraph](https://user-images.githubusercontent.com/23742278/128281418-13c68e77-746f-4227-b9d5-2f85ceeba43e.png)
 
-Where the `play_topic` s used by the human node in order to perform the  `PLAY` state, and which room the robot should reach. It also sends data to the finiste state machine node.
+#### Topics involved:
+* Where the `play_topic` is used by the human node in order to perform the  `PLAY` state, and which room the robot should reach. It also sends data to the finiste state machine node.
 
-exp3.msg/Coordinates: message made of two integers x and y
 
-exp3.srv/Explore: a simple `int64` input and output service to tell the explore when to start and end.
-exp3.srv/BallService: used by `dog_fsm.py` in order to ask for the goal ball's coordinates. If the answer (of type Coordintates) is (100, 100), the requested ball is still to be found, the server is `ball_server.py`
+#### The message types used are:
+* exp3.msg/Coordinates: message made of two integers x and y
+
+
+#### The services message types used:
+* exp3.srv/Explore: a simple `int64` input and output service to tell the explore when to start and end.
+* exp3.srv/BallService: used by `dog_fsm.py` in order to ask for the goal ball's coordinates. If the answer (of type Coordintates) is (100, 100), the requested ball is still to be found, the server is `ball_server.py`
 
 
 ### Installation & Running
