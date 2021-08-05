@@ -75,6 +75,10 @@ The available nodes and topics could be found in the following rqt_graph:
 
 See the [MAIN](https://github.com/Qaoud/EXP-ROB_ASSIGNMENT_2-3) branch to be able to install and run this package.
 
+
+### Limitations
+* If the robot stuck faced the wall at a near distance, the planner won't let the robot get a path to get out of that situation and might end up stucked and not moving.
+* In my case, as running the whole package on a virtual machine, it was a bit slow and it might cause some issues when running the package. So I suggest to execute and run the package on a real machine.
 -----
 
 author: Mohamed Qaoud - mohamed.qaoud@outlook.com
